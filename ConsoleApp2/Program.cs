@@ -68,9 +68,52 @@ namespace ConsoleApp2
         {
             Console.WriteLine(" +---+");
             Console.WriteLine(" |   |");
-            Console.WriteLine(pokusy > 0 ? " O   |" : "     |");
-            Console.WriteLine(pokusy > 1 ? (pokusy > 3 ? "/|\\" : pokusy > 2 ? "/| " : " | ") + "  |" : "     |");
-            Console.WriteLine(pokusy > 4 ? (pokusy > 5 ? "/ \\" : "/   ") + " |" : "     |");
+            switch (pokusy)
+            {
+                case 0:
+                    Console.WriteLine("     |");
+                    Console.WriteLine("     |");
+                    Console.WriteLine("     |");
+                    break;
+
+                case 1:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine("     |");
+                    Console.WriteLine("     |");
+
+                    break;
+
+                case 2:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine(" |   |");
+                    Console.WriteLine("     |");
+                    break;
+
+                case 3:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine("/|   |");
+                    Console.WriteLine("     |");
+                    break;
+
+                case 4:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine("/|\\  |");
+                    Console.WriteLine("     |");
+                    break;
+
+                case 5:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine("/|\\  |");
+                    Console.WriteLine("/    |");
+                    break;
+
+                case 6:
+                    Console.WriteLine(" O   |");
+                    Console.WriteLine("/|\\  |");
+                    Console.WriteLine("/ \\  |");
+                    break;
+            }
+
             Console.WriteLine("     |");
             Console.WriteLine("=========");
         }
